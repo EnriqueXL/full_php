@@ -25,9 +25,9 @@ include("./includes/header.php")
                     <textarea name="description" class="form-control" rows="2" placeholder="task description"></textarea>
                 </div>
                 <!-- save_task lleva el contenido de el formulario -->
-            <input type="submit" class="btn btn-success btn-block" name="save_task" value="Save">
-        </form>
-    </div>
+                <input type="submit" class="btn btn-success btn-block" name="save_task" value="Save">
+            </form>
+        </div>
     </div>
 
 </div>
