@@ -2,6 +2,8 @@
 
 include("../conexion.php");
 
+    /* var_dump("ejemplo",$_POST['title']); */
+
     /* Validamos si esta llegando lo del form a travez del metodo POST */
 if (isset($_POST['save_task'])) {
     /* Obtenemos los valores a travez de post para guardarlos en variables */
@@ -15,7 +17,13 @@ if (isset($_POST['save_task'])) {
     if (!$result) {
         die("error al guardar");
     }
+
+    $_SESSION['message'] = 'Task saved success';
+    $_SESSION['message_type'] = 'success';
+
     header("Location: ../index.php");
 }
+
+echo "error al recibir save_task";
 
 ?>
