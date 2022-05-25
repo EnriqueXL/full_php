@@ -45,7 +45,7 @@ include("./includes/header.php")
                                 <a href="/crud/edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
                                     <i class="fas fa-marker"></i>
                                 </a>
-                                <a href="/crud/edit.php?id=<?php echo $row['id']?>" class="btn btn-danger">
+                                <a href="./crud/delete.php?id=<?php echo $row['id']?>" class="btn btn-danger">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
                             </td>
