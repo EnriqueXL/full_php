@@ -42,7 +42,7 @@ include("./includes/header.php")
                             <td> <?php echo $row['description']; ?> </td>
                             <td> <?php echo $row['created_at']; ?> </td>
                             <td>
-                                <a href="/crud/edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
+                                <a href="./crud/edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
                                     <i class="fas fa-marker"></i>
                                 </a>
                                 <a href="./crud/delete.php?id=<?php echo $row['id']?>" class="btn btn-danger">
