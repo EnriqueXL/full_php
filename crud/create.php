@@ -18,10 +18,7 @@ if (isset($_POST['save_task'])) {
         die("error al guardar");
     }
 
-    $_SESSION['message'] = 'Task saved success';
-    $_SESSION['message_type'] = 'success';
-
-    header("Location: ../index.php");
+    echo'<script type="text/javascript">alert("¡Save success!");window.location.href="../index.php";</script>'; 
 }
 
 echo "error al recibir save_task";
